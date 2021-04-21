@@ -1,5 +1,6 @@
 package com.te.springmvc2.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,19 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public List<EmployeeBean> getAllData() {
 		
 		return dao.getAllData();
+	}
+
+	@Override
+	public boolean addEmployee(EmployeeBean bean) {
+
+		return dao.addEmployee(bean);
+	}
+
+	@Override
+	public boolean updateEmployee(EmployeeBean bean) {
+		
+		
+		return dao.updateEmployee(bean);
 	}
 
 }

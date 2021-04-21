@@ -1,5 +1,7 @@
 package com.te.springmvc2.dao;
 
+import java.util.Date;
+
 import org.springframework.stereotype.Repository;
 
 import com.te.springmvc2.beans.EmployeeBean;
@@ -16,4 +18,9 @@ public interface EmployeeDao {
 	public boolean deleteEmployee(int id);
 	
 	public java.util.List<EmployeeBean> getAllData();
+	
+	public boolean addEmployee(EmployeeBean bean);
+	
+	public boolean updateEmployee(EmployeeBean bean); 
+	
 }

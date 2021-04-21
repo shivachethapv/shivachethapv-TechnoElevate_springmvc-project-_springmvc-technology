@@ -21,7 +21,7 @@ public class CookieController {
 	
 	@GetMapping("/createcookie")
 	public String cookie(HttpServletResponse response,ModelMap map) {
-		Cookie cookie = new Cookie("empname", "dil");
+		Cookie cookie = new Cookie("empname", "dilkush");
 		response.addCookie(cookie);
 		map.addAttribute("msg", "added cookies");
 		return "cookiepage";
